@@ -9,7 +9,7 @@ async function getMovieInfo(title) {
       return alert('Enter a Movie Title');
     }
 
-    const url = `http://www.omdbapi.com/?apikey=${APIkey}&t=${title}`;
+    const url = `https://www.omdbapi.com/?apikey=${APIkey}&t=${title}`;
     const getData = await $.ajax({
       url: url,
       method: 'GET',
